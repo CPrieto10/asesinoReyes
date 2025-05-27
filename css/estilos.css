@@ -2,9 +2,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Lora','Segoe UI', sans-serif;
   line-height: 1.6;
-  color: #222;
+  color: white;
+}
+
+h1, h2{
+  
+  font-family: 'Cinzel', serif;
+  
 }
 
 /* Parallax */
@@ -19,17 +25,17 @@ body {
 }
 
 .parallax-header {
-  background-image: url('imagenes/fondo_header.jpg');
+  background-image: url('../imagenes/fondo_header.jpg');
 }
 
 .parallax-footer {
-  background-image: url('imagenes/fondo_footer.jpg');
+  background-image: url('../imagenes/fondo_footer.jpg');
   padding: 40px 20px;
 }
 
 /* Autor */
 .autor-section {
-  background: #f9f9f9;
+  background: #406E8E;
   padding: 40px 20px;
   text-align: center;
 }
@@ -39,12 +45,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #fff;
+  background: #161925;
   padding: 40px 20px;
+  align-items: stretch;
 }
 
 .libro-card {
-  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #23395B;
   margin: 15px;
   padding: 20px;
   width: 280px;

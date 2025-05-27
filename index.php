@@ -7,7 +7,8 @@ $libros = $pdo->query('SELECT * FROM libros')->fetchAll();
 <head>
   <meta charset="UTF-8" />
   <title>Crónica del Asesino de Reyes</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lora&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
@@ -23,7 +24,6 @@ $libros = $pdo->query('SELECT * FROM libros')->fetchAll();
 </section>
 
 <section class="libros-section">
-  <h2>Los libros</h2>
   <?php foreach ($libros as $libro): ?>
   <article class="libro-card slide-in">
     <img src="<?= htmlspecialchars($libro['portada']) ?>" alt="<?= htmlspecialchars($libro['titulo']) ?>" />
@@ -34,7 +34,7 @@ $libros = $pdo->query('SELECT * FROM libros')->fetchAll();
 </section>
 
 <footer class="parallax parallax-footer">
-  <p>© 2025 Carlos Prieto | Proyecto educativo | Aviso legal y política de privacidad</p>
+  <p>© 2025 Carlos Prieto | Proyecto educativo | <a href="aviso.php">Aviso legal y política de privacidad</a></p>
 </footer>
 
 </body>
