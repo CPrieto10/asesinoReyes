@@ -1,5 +1,5 @@
 <?php
-require_once 'conexion.php';
+require_once 'conexion_bd/conexion.php';
 
 try {
     $stmt = $pdo->query("SELECT titulo, contenido FROM info_legal WHERE id = 1");
