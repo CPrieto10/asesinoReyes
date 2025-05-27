@@ -73,6 +73,31 @@ h1, h2{
   margin-bottom: 15px;
 }
 
+.link-legal {
+  color: white;
+  text-decoration: none;
+}
+
+.link-legal:visited {
+  color: #cccccc; /* Color gris claro cuando el enlace ha sido visitado */
+}
+
+.link-legal:hover {
+  text-decoration: underline;
+  color: #dddddd;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.github-link:hover .github-icon {
+  transform: scale(1.2);
+}
+
 /* Animaciones */
 @keyframes fadeIn {
   from {opacity: 0;}
