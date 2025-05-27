@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require 'conexion_bd/conexion.php';
 $libros = $pdo->query('SELECT * FROM libros')->fetchAll();
 ?>
 <!DOCTYPE html>
@@ -13,10 +13,7 @@ $libros = $pdo->query('SELECT * FROM libros')->fetchAll();
 </head>
 <body>
 
-<header class="parallax parallax-header">
-  <h1 class="fade-in">Crónica del Asesino de Reyes</h1>
-  <p class="fade-in">Una saga de Patrick Rothfuss</p>
-</header>
+<?php include 'includes/header.php'; ?>
 
 <section class="autor-section">
   <h2>Sobre el autor</h2>
@@ -33,13 +30,7 @@ $libros = $pdo->query('SELECT * FROM libros')->fetchAll();
   <?php endforeach; ?>
 </section>
 
-<footer class="parallax parallax-footer">
-  <p>© 2025 Carlos Prieto | Proyecto educativo | <a href="aviso.php" class = "link-legal">Aviso legal y política de privacidad</a> | 
-  <a href="https://github.com/CPrieto10" target="_blank" class="github-link" title="Mi GitHub">
-      <img src="imagenes/github-icon.png" alt="GitHub" class="github-icon">
-    </a>
-  </p>
-</footer>
+<?php include 'includes/footer.php'; ?>
 
 </body>
 </html>
